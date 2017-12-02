@@ -11,9 +11,9 @@ Vue.use(BootstrapVue)
 // Clear after module reload
 window.addEventListener('message', e => {
   if (process.env.NODE_ENV !== 'production') {
-    console.clear()
-    console.log('Log was cleared purposefully to hide previous warnings, errors etc.')
-    console.log('to Enable remove console.clear() from router/index.js file.')
+    // console.clear()
+    // console.log('Log was cleared purposefully to hide previous warnings, errors etc.')
+    // console.log('to Enable remove console.clear() from router/index.js file.')
   }
 })
 

@@ -2,7 +2,13 @@
   <div class='hello'>
     <h1>{{ msg }}</h1>
     <h2>{{ submsg }}</h2>
-
+    <br />
+    <ul id="example-1">
+      <li v-for="(route, index) in routes" v-bind:key="index">
+        <!-- javascript expression using `v-bind` -->
+        <h3><router-link :to="{path: route.path}">{{route.name}}</router-link></h3>
+      </li>
+    </ul>
     <br/>
 
     <b-container fluidX>
@@ -30,6 +36,7 @@
 </template>
 
 <script>
+import Routes from '../router/routes'
 import SingleTodo from './SingleTodo'
 export default {
   name: 'Todo',
@@ -37,7 +44,8 @@ export default {
     return {
       msg: 'First Todo app in Vue.js',
       submsg: 'With vue-router',
-      todos: this.getTodos()
+      todos: this.getTodos(),
+      routes: Routes()
     }
   },
 
@@ -50,7 +58,7 @@ export default {
     AddTodo (event) {
       this.todos.push({
         value: event.target.value,
-        status: false
+        status: true
       })
 
       event.target.value = ''

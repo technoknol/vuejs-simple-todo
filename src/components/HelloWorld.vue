@@ -2,7 +2,7 @@
   <div class="hello">
     <img src="../assets/logo.png">
     <h1>{{ msg }}</h1>
-    <h3>Navigation : </h3>
+    <br />
     <ul id="example-1">
       <li v-for="(route, index) in routes" v-bind:key="index">
         <!-- javascript expression using `v-bind` -->
@@ -26,7 +26,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
 h1,
 h2 {
   font-weight: normal;
