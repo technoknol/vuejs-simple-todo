@@ -1,6 +1,11 @@
 # vue-todo
 
-> A Vue.js project
+> A Vue.js todo app 
+
+_Note: that this is not production ready. I've created just for learning purpose._
+
+![Demo](https://user-images.githubusercontent.com/6429418/33520216-816e9938-d7dc-11e7-8268-de36486d4924.png)
+
 
 ## Build Setup
 
